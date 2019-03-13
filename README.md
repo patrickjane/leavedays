@@ -1,5 +1,8 @@
 ![Logo](/png/icon_60_3x_rounded.png)
 
+German version: [README-de.md](README-de.md)
+
+
 # Overview
 Leave Days is an iPhone app, which counts and manages your annual leave days. Leave days can be saved in the app and displayed in different views. The app automatically calculates your remaining leave, and also considers residual leave, public holiday and weekends.
 
