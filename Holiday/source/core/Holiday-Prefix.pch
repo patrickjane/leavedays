@@ -1,0 +1,151 @@
+//************************************************************
+// Prefix Header
+// The contents of this file are implicitly included at the beginning of every source file.
+//************************************************************
+// Created by Patrick Fial on 26.08.2013
+// Copyright 2010-2013 Patrick Fial. All rights reserved.
+//************************************************************
+
+//************************************************************
+// includes
+//************************************************************
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+   #import <UIKit/UIKit.h>
+   #import <Foundation/Foundation.h>
+#endif
+
+#include <string.h>
+
+//************************************************************
+// flags
+//************************************************************
+
+#define TARGET_IOS
+
+#define kYearChangedNotification @"ALChangedNotification"
+#define kInsertedNotification @"ALYearInsertedNotification"
+#define kDeletedNotification @"ALYearDeletedNotification"
+#define kSessionStartedNotification @"ALSessionStartedNotification"
+#define kSessionEndedNotification @"ALSessionEndedNotification"
+#define kUserLoggedIn @"ALUserLoggedIn"
+#define kUserLoggedOut @"ALUserLoggedOut"
+#define kUserLoginFailed @"ALUserLoginFailed"
+#define kLeaveChanged @"ALLeaveChanged"
+//#define kPublicHolidayChanged @"ALPublicHolidayChanged"
+//#define kPublicHolidayCountriesLoaded @"ALPublicHolidayCountriesLoaded"
+#define kPublicHolidayEntriesLoaded @"ALPublicHolidayEntriesLoaded"
+#define kICloudStorageInitialized @"ALICloudStorageInitialized"
+#define kICloudUpdate @"ALICloudUpdate"
+#define kImportFinished @"ALImportFinished"
+#define kWizardFinished @"ALWizardFinished"
+
+#define kPublicHolidayInfoEntity @"PublicHolidayInfo"
+
+//************************************************************
+// useful macros
+//************************************************************
+
+#define TOOLBARHEIGHT 44.0
+#define STATUSBARHEIGHT 20.0
+#define TABBARHEIGHT 49.0
+#define CALENDAR_YEAR_RANGE 10
+
+typedef unsigned char bitarray[16];
+static inline void clearBits(bitarray* array) { if (array) memset(array, 0, sizeof(bitarray)); }
+static inline void copyBits(bitarray* from, bitarray* to) { if (from && to) memcpy(to, from, sizeof(bitarray)); }
+
+#define BITOP(a,b,op) ((a)[(size_t)(b)/(8*sizeof *(a))] op ((size_t)1<<((size_t)(b)%(8*sizeof *(a)))))
+
+typedef double yeararray[12];
+static inline void clearYears(yeararray* array)              { if (array) memset(array, 0, sizeof(yeararray));      }
+static inline void copyYears(yeararray* from, yeararray* to) { if (from && to) memcpy(to, from, sizeof(yeararray)); }
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define SCALEFACTOR (0.5 * (  [[UIScreen mainScreen] bounds].size.width/375.0 )  )
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+// Dark Tableview style
+
+#define DARKTABLETEXTCOLOR UIColorFromRGB(0xe4e8eb)
+#define DARKTABLEBACKCOLOR UIColorFromRGB(0x282d31)
+#define DARKTABLESEPARATORCOLOR UIColorFromRGB(0x5e5f64)
+
+// CYAN
+
+//#define MAINCOLORDARK UIColorFromRGB(0x0097A7)
+//#define DETAILCOLOR UIColorFromRGB(0xFF5722)
+//#define SECONDDETAILCOLOR UIColorFromRGB(0x00BCD4)
+
+// TEAL
+
+#define MAINCOLORDARK UIColorFromRGB(0x00796B)
+#define DETAILCOLOR UIColorFromRGB(0xFF5722)
+#define SECONDDETAILCOLOR UIColorFromRGB(0x009688)
+#define MAINCOLORBRIGHT UIColorFromRGB(0x88bbb5)
+#define EARNCOLOR UIColorFromRGB(0x70c0c7)
+#define GREYINPUTCOLOR [UIColor colorWithRed:0.556863 green:0.556863 blue:0.576471 alpha:1.0]
+
+// LIGHT-TEAL
+
+//#define MAINCOLORDARK UIColorFromRGB(0x009688)
+//#define DETAILCOLOR UIColorFromRGB(0xFF5722)
+//#define SECONDDETAILCOLOR UIColorFromRGB(0xB2DFDB)
+
+#define SECONDMAINCOLOR UIColorFromRGB(0x00796B)
+
+// BLUE-GREY
+
+//#define MAINCOLORDARK UIColorFromRGB(0x455A64)
+//#define DETAILCOLOR UIColorFromRGB(0x009688)
+//#define SECONDDETAILCOLOR UIColorFromRGB(0x607D8B)
+
+// BLUE / GREEN
+
+//#define MAINCOLORDARK UIColorFromRGB(0x1976D2)
+//#define DETAILCOLOR UIColorFromRGB(0x8BC34A)
+//#define SECONDDETAILCOLOR UIColorFromRGB(0x2196F3)
+
+
+// ORANGE / BLUE
+
+//#define MAINCOLORDARK UIColorFromRGB(0xF57C00)
+//#define DETAILCOLOR UIColorFromRGB(0x536DFE)
+//#define SECONDDETAILCOLOR UIColorFromRGB(0xFF9800)
+
+
+#define LIGHTTEXTCOLOR [UIColor whiteColor]
+#define DARKTEXTCOLOR [UIColor darkGrayColor]
+#define DETAILEXTCOLOR MAINCOLORDARK
+
+//************************************************************
+// types
+//************************************************************
+
+enum ReturnValues
+{
+   success= 0,
+   fail= -1,
+   ignore= 1,
+   na= -1
+};
+
+enum TimeDef
+{
+   tmeSecond= 1,
+   tmeSecondsPerMinute= 60 * tmeSecond,
+   tmeSecondsPerHour= 60 * tmeSecondsPerMinute,
+   tmeSecondsPerDay= 24 * tmeSecondsPerMinute,
+   tmeSecondsPerWeek= 7 * tmeSecondsPerDay
+};
+
+//************************************************************
+

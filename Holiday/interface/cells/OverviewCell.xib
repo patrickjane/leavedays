@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="65" id="2" customClass="OverviewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2" id="Z4z-OY-Kam">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Jun 7, 2010 - Jun 13, 2010" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                        <rect key="frame" x="13" y="0.0" width="202.5" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="fzJ-Lv-azG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                        <color key="textColor" name="cellMainText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="100 days, 10.24.2012 - 10.31.2012" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                        <rect key="frame" x="13" y="22.5" width="187" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Mbf-1r-jLk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" name="cellSubText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="12">
+                        <rect key="frame" x="224" y="1" width="97" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Xbb-Ao-2DW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" name="cellMainText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5">
+                        <rect key="frame" x="201" y="22.5" width="119" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="aQV-md-mmf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" name="cellSubText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="12" firstAttribute="top" secondItem="Z4z-OY-Kam" secondAttribute="top" constant="1" id="1cS-su-Ts9"/>
+                    <constraint firstItem="5" firstAttribute="leading" secondItem="4" secondAttribute="trailing" constant="1" id="4Xb-q0-UuD"/>
+                    <constraint firstItem="5" firstAttribute="leading" secondItem="4" secondAttribute="trailing" constant="1" id="BvX-no-c1t"/>
+                    <constraint firstItem="3" firstAttribute="leading" secondItem="Z4z-OY-Kam" secondAttribute="leading" constant="13" id="I9R-bG-nlr"/>
+                    <constraint firstItem="12" firstAttribute="leading" secondItem="3" secondAttribute="trailing" constant="8.5" id="W04-4X-bEH"/>
+                    <constraint firstItem="3" firstAttribute="top" secondItem="Z4z-OY-Kam" secondAttribute="top" id="bdv-Vy-F1X"/>
+                    <constraint firstAttribute="trailing" secondItem="12" secondAttribute="trailing" constant="-1" id="fj9-eO-thb"/>
+                    <constraint firstAttribute="bottom" secondItem="5" secondAttribute="bottom" constant="0.5" id="ocZ-Pk-3pY"/>
+                    <constraint firstItem="4" firstAttribute="leading" secondItem="Z4z-OY-Kam" secondAttribute="leading" constant="13" id="rea-3I-YnU"/>
+                    <constraint firstAttribute="trailing" secondItem="5" secondAttribute="trailing" id="rxX-LG-Amg"/>
+                    <constraint firstAttribute="bottom" secondItem="4" secondAttribute="bottom" constant="0.5" id="xOq-pc-mik"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="cellBackground"/>
+            <connections>
+                <outlet property="categoryText" destination="12" id="16"/>
+                <outlet property="dateText" destination="4" id="17"/>
+                <outlet property="ownerLabel" destination="5" id="19"/>
+                <outlet property="titleText" destination="3" id="18"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="153"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="cellBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cellMainText">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cellSubText">
+            <color red="0.39996230602264404" green="0.40002402663230896" blue="0.3999488353729248" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

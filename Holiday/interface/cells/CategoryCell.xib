@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="2" customClass="CategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2" id="uLQ-oI-dND">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Krankheitstage" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="8">
+                        <rect key="frame" x="17" y="0.0" width="203" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" name="cellMainText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="S" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="16">
+                        <rect key="frame" x="292" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="QoH-jB-E8f"/>
+                            <constraint firstAttribute="height" constant="24" id="wuH-k6-sof"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chart.png" translatesAutoresizingMaskIntoConstraints="NO" id="vud-37-Rya">
+                        <rect key="frame" x="228" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="Leu-t3-NQ9"/>
+                            <constraint firstAttribute="height" constant="24" id="lqb-dN-kBn"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sum.png" translatesAutoresizingMaskIntoConstraints="NO" id="j5E-80-77l">
+                        <rect key="frame" x="260" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="5Rh-BM-i58"/>
+                            <constraint firstAttribute="height" constant="24" id="jNN-ia-MVc"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="16" firstAttribute="leading" secondItem="j5E-80-77l" secondAttribute="trailing" constant="8" id="5Rb-hO-O62"/>
+                    <constraint firstItem="vud-37-Rya" firstAttribute="centerY" secondItem="uLQ-oI-dND" secondAttribute="centerY" id="5nh-tP-h0R"/>
+                    <constraint firstItem="16" firstAttribute="centerY" secondItem="uLQ-oI-dND" secondAttribute="centerY" id="DXz-OL-Dop"/>
+                    <constraint firstItem="j5E-80-77l" firstAttribute="centerY" secondItem="uLQ-oI-dND" secondAttribute="centerY" id="chu-go-Bgj"/>
+                    <constraint firstItem="j5E-80-77l" firstAttribute="leading" secondItem="vud-37-Rya" secondAttribute="trailing" constant="8" id="j0a-8i-VQv"/>
+                    <constraint firstAttribute="trailing" secondItem="16" secondAttribute="trailing" constant="4" id="xw1-LH-axj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="cellBackground"/>
+            <connections>
+                <outlet property="firstImage" destination="j5E-80-77l" id="MRD-0l-b62"/>
+                <outlet property="mainText" destination="8" id="15"/>
+                <outlet property="secondImage" destination="vud-37-Rya" id="Yn0-ao-DTS"/>
+                <outlet property="textReadOnly" destination="16" id="17"/>
+            </connections>
+            <point key="canvasLocation" x="50.724637681159422" y="35.491071428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chart.png" width="256" height="256"/>
+        <image name="sum.png" width="25" height="25"/>
+        <namedColor name="cellBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cellMainText">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

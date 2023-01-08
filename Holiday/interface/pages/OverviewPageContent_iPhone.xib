@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OverviewPageContent">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4f-pk-vGH" customClass="YearChart">
+                    <rect key="frame" x="0.0" y="331" width="375" height="336"/>
+                    <color key="backgroundColor" name="cellBackground"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="223" id="KC1-ZZ-Odu"/>
+                        <constraint firstAttribute="height" constant="220" id="ZCg-6i-FEe"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="KC1-ZZ-Odu"/>
+                            <exclude reference="ZCg-6i-FEe"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJr-hT-Fom" customClass="DonutView">
+                    <rect key="frame" x="85" y="96" width="205" height="205"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fJr-hT-Fom" secondAttribute="height" multiplier="1:1" id="AOO-sn-lBk"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9V-hN-oSm" customClass="OverviewDetails">
+                    <rect key="frame" x="16" y="64" width="343" height="259"/>
+                    <color key="backgroundColor" name="cellBackground"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="cellBackground"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="n4f-pk-vGH" secondAttribute="trailing" id="2Uk-Bl-oAD"/>
+                <constraint firstItem="o9V-hN-oSm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="6bm-y8-qKG"/>
+                <constraint firstItem="fJr-hT-Fom" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="96" id="BVk-AX-M9u"/>
+                <constraint firstItem="n4f-pk-vGH" firstAttribute="top" secondItem="o9V-hN-oSm" secondAttribute="bottom" constant="8" id="JeP-yR-4be"/>
+                <constraint firstItem="n4f-pk-vGH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LCG-Oq-BQB"/>
+                <constraint firstItem="o9V-hN-oSm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="OhM-Fh-ctZ"/>
+                <constraint firstAttribute="trailing" secondItem="fJr-hT-Fom" secondAttribute="trailing" constant="85" id="afp-L4-IZK"/>
+                <constraint firstAttribute="bottom" secondItem="n4f-pk-vGH" secondAttribute="bottom" id="cKf-n8-jVf"/>
+                <constraint firstItem="n4f-pk-vGH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dPj-SH-an4"/>
+                <constraint firstItem="n4f-pk-vGH" firstAttribute="top" secondItem="fJr-hT-Fom" secondAttribute="bottom" constant="30" id="gGd-BM-LH0"/>
+                <constraint firstAttribute="trailing" secondItem="n4f-pk-vGH" secondAttribute="trailing" id="ixN-eQ-BzZ"/>
+                <constraint firstAttribute="trailing" secondItem="o9V-hN-oSm" secondAttribute="trailing" constant="16" id="ptJ-3H-V4G"/>
+                <constraint firstAttribute="bottom" secondItem="n4f-pk-vGH" secondAttribute="bottom" id="q7j-Jj-3S3"/>
+                <constraint firstItem="n4f-pk-vGH" firstAttribute="top" secondItem="fJr-hT-Fom" secondAttribute="bottom" constant="38" id="qqE-EP-oIr"/>
+                <constraint firstItem="fJr-hT-Fom" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="85" id="siY-pv-AZc"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2Uk-Bl-oAD"/>
+                    <exclude reference="LCG-Oq-BQB"/>
+                    <exclude reference="cKf-n8-jVf"/>
+                    <exclude reference="qqE-EP-oIr"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="detailsView" destination="o9V-hN-oSm" id="lhX-ee-ssB"/>
+                <outlet property="donut" destination="fJr-hT-Fom" id="SqH-Zd-CBT"/>
+                <outlet property="year" destination="n4f-pk-vGH" id="qn2-Xj-d4Y"/>
+            </connections>
+            <point key="canvasLocation" x="-503.5" y="35.5"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="cellBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZGm-tf-Ead">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="wizardStart" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXZ-lx-hvc" customClass="WizardController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nq0-vi-0G4">
+                                <rect key="frame" x="254" y="634" width="113" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="GwU-EY-u19"/>
+                                    <constraint firstAttribute="height" constant="30" id="gVS-PV-jCO"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextPage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="n37-BT-bdN"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Lq9-7y-4MQ">
+                                <rect key="frame" x="153" y="630" width="69" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="KhO-H5-Fy2"/>
+                                    <constraint firstAttribute="height" constant="37" id="cFH-bV-R6g"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.63921568630000003" green="0.85098039219999999" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4r-Dc-l81">
+                                <rect key="frame" x="8" y="634" width="123" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8Kx-zu-oJt"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="prevPage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="myI-Yh-f6I"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7iO-xs-TG6">
+                                <rect key="frame" x="0.0" y="72" width="375" height="558"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LzH-Nx-sso" firstAttribute="bottom" secondItem="nq0-vi-0G4" secondAttribute="bottom" constant="3" id="6qm-m7-O0m"/>
+                            <constraint firstItem="Lq9-7y-4MQ" firstAttribute="top" secondItem="7iO-xs-TG6" secondAttribute="bottom" id="AOI-2w-Qtu"/>
+                            <constraint firstItem="LzH-Nx-sso" firstAttribute="bottom" secondItem="P4r-Dc-l81" secondAttribute="bottom" constant="3" id="Di0-tv-gqP"/>
+                            <constraint firstItem="7iO-xs-TG6" firstAttribute="top" secondItem="LzH-Nx-sso" secondAttribute="top" constant="8" id="Oqi-RF-W8z"/>
+                            <constraint firstItem="LzH-Nx-sso" firstAttribute="trailing" secondItem="7iO-xs-TG6" secondAttribute="trailing" id="TSi-WK-OhY"/>
+                            <constraint firstItem="7iO-xs-TG6" firstAttribute="leading" secondItem="LzH-Nx-sso" secondAttribute="leading" id="Uet-zS-M2J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nq0-vi-0G4" secondAttribute="trailing" constant="-8" id="VYM-TD-Uc7"/>
+                            <constraint firstItem="nq0-vi-0G4" firstAttribute="leading" secondItem="Lq9-7y-4MQ" secondAttribute="trailing" constant="32" id="VnL-8t-0xC"/>
+                            <constraint firstItem="P4r-Dc-l81" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-8" id="Z8f-0n-Cmg"/>
+                            <constraint firstItem="LzH-Nx-sso" firstAttribute="bottom" secondItem="Lq9-7y-4MQ" secondAttribute="bottom" id="fhT-Nd-qsi"/>
+                            <constraint firstItem="Lq9-7y-4MQ" firstAttribute="centerX" secondItem="LzH-Nx-sso" secondAttribute="centerX" id="gtw-Bs-aRp"/>
+                            <constraint firstItem="Lq9-7y-4MQ" firstAttribute="leading" secondItem="P4r-Dc-l81" secondAttribute="trailing" constant="22" id="zIz-Qt-zLY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LzH-Nx-sso"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="bq4-Rf-k8z"/>
+                    <connections>
+                        <outlet property="buttonBack" destination="P4r-Dc-l81" id="tK8-JM-wsf"/>
+                        <outlet property="buttonNext" destination="nq0-vi-0G4" id="cIo-1F-AFw"/>
+                        <outlet property="pageControl" destination="Lq9-7y-4MQ" id="OYI-eZ-43U"/>
+                        <outlet property="scrollView" destination="7iO-xs-TG6" id="ndC-7x-cPw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408.5" y="395.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aPk-Tq-Gr4">
+            <objects>
+                <navigationController storyboardIdentifier="wizardNavController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZGm-tf-Ead" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Axj-5P-1hY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="pG3-Wd-xbC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lkl-3E-vQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-21" y="386"/>
+        </scene>
+    </scenes>
+</document>

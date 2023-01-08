@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapController">
+            <connections>
+                <outlet property="mapView" destination="sod-6c-gem" id="Edu-Cq-BNg"/>
+                <outlet property="toolbar" destination="4WJ-L9-Idp" id="A7M-NO-lbP"/>
+                <outlet property="view" destination="iN0-l3-epB" id="acv-Vu-S7l"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sod-6c-gem">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                </mapView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4WJ-L9-Idp">
+                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="w9W-13-VwZ"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem title="Item" id="R1S-9X-meL"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4WJ-L9-Idp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8hM-Y5-isY"/>
+                <constraint firstAttribute="trailing" secondItem="sod-6c-gem" secondAttribute="trailing" id="Uc1-2Y-gKR"/>
+                <constraint firstItem="sod-6c-gem" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cXL-lO-e9Q"/>
+                <constraint firstItem="4WJ-L9-Idp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="jqh-8U-Dvd"/>
+                <constraint firstItem="sod-6c-gem" firstAttribute="top" secondItem="4WJ-L9-Idp" secondAttribute="bottom" id="vDV-EC-cQg"/>
+                <constraint firstAttribute="trailing" secondItem="4WJ-L9-Idp" secondAttribute="trailing" id="xyG-ot-ISN"/>
+                <constraint firstItem="sod-6c-gem" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="zfN-zm-Tgf"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="-194.5" y="44.5"/>
+        </view>
+    </objects>
+</document>

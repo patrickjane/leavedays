@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleDisplayName = "Urlaubstage";
+NSCalendarsUsageDescription = "Zugriff auf Kalender wird benötigt für: Urlaubsdaten im Kalender speichern (optional), Feiertage aus Kalender laden (kann für die korrekte Berechnung der Urlaubsdauer notwendig sein)";
+NSContactsUsageDescription = "Urlaubsdaten im Kalender speichern";

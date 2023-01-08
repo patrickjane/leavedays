@@ -1,0 +1,574 @@
+/* No comment provided by engineer. */
+"<Empty>" = "<Leer>";
+
+/* No comment provided by engineer. */
+"Add leave" = "Urlaub eintragen";
+
+/* No comment provided by engineer. */
+"Annual leave" = "Jahresurlaub";
+
+/* No comment provided by engineer. */
+"Begin" = "Anfang";
+
+/* No comment provided by engineer. */
+"Comment" = "Kommentar";
+
+/* No comment provided by engineer. */
+"Copyright (c) 2010 Patrick Fial" = "Copyright (c) 2010 Patrick Fial";
+
+/* No comment provided by engineer. */
+"Current year" = "Aktuelles Jahr";
+
+/* No comment provided by engineer. */
+"Data" = "Daten";
+
+/* No comment provided by engineer. */
+"Days" = "Tage";
+"Day" = "Tag";
+"days" = "Tage";
+"day" = "Tag";
+
+/* No comment provided by engineer. */
+"Delete all records" = "Alle Einträge löschen";
+
+/* No comment provided by engineer. */
+"Detail" = "Detail";
+
+/* No comment provided by engineer. */
+"Duration" = "Dauer";
+
+/* No comment provided by engineer. */
+"End" = "Ende";
+
+/* No comment provided by engineer. */
+"Error" = "Fehler";
+
+/* No comment provided by engineer. */
+"Expiration" = "Ablaufdatum";
+
+/* No comment provided by engineer. */
+"Failed to delete data from storage" = "Fehler beim Löschen von Daten";
+
+/* No comment provided by engineer. */
+"Failed to load data from storage" = "Fehler beim Laden von Daten";
+
+/* No comment provided by engineer. */
+"Failed to save data" = "Fehlern beim Speichern von Daten";
+
+/* No comment provided by engineer. */
+"General" = "Allgemein";
+
+/* No comment provided by engineer. */
+"Half day?" = "Halber Tag?";
+"half day" = "halber Tag";
+"Half day" = "Halber Tag";
+
+/* No comment provided by engineer. */
+"Hours" = "Stunden";
+"Hour" = "Stunde";
+"hours" = "Stunden";
+"hour" = "Stunde";
+
+/* No comment provided by engineer. */
+"Leave days overview" = "Urlaubsübersicht";
+
+/* No comment provided by engineer. */
+"Options" = "Optionen";
+
+/* No comment provided by engineer. */
+"Precision" = "Präzision";
+
+/* No comment provided by engineer. */
+"Preview count" = "Vorschau Anzahl";
+
+/* No comment provided by engineer. */
+"Remaining" = "Verbleibend";
+
+/* No comment provided by engineer. */
+"Residual leave" = "Resturlaub";
+
+/* No comment provided by engineer. */
+"Settings" = "Einstellungen";
+
+/* No comment provided by engineer. */
+"Special leave" = "Sonderurlaub";
+
+/* No comment provided by engineer. */
+"Spent" = "Verbraucht";
+
+/* No comment provided by engineer. */
+"Summary" = "Übersicht";
+
+/* No comment provided by engineer. */
+"Title" = "Titel";
+
+/* No comment provided by engineer. */
+"Preview" = "Vorschau";
+"Overview" = "Übersicht";
+
+"Note: Duration excludes weekends" = "Hinweis: Dauer berücksichtigt nur Arbeitstage, keine Wochenenden.";
+
+"Calendar" = "Kalender";
+"Save"= "Speichern";
+"Leave" = "Urlaub";
+"Today" = "Heute";
+
+"Remaining days" = "Verbleibende Tage";
+"Residual leave (expired)" = "Resturlaub (verfallen)";
+"Total" = "Gesamt";
+"Residual leave expires" = "Resturlaub verfällt";
+"Mail settings" = "Mail Einstellungen";
+"Show state marker" = "Statusmarker anzeigen";
+"Default state" = "Voreinstellung";
+"Planned" = "Geplant";
+"Approved" = "Genehmigt";
+"Badge-Count" = "Badge-Count";
+"Leave days" = "Urlaubstage";
+"Send mail request" = "Anfrage per Mail";
+"Failed to load data from storage. Erase all data and restart application?" = "Fehler beim Laden der Datenbank. Alle Daten löschen und App neu starten?";
+"Erased all data. Please restart application." = "Alle Daten gelöscht. App bitte neu starten";
+"To:" = "An:";
+"Cc:" = "Cc:";
+"Bcc:" = "Bcc:";
+"Subject:" = "Betreff:";
+"Body:" = "Inhalt:";
+"Mail template" = "Mail Vorlage";
+"Note: Details can be included by adding variables to the body text: $begin, $end, $duration, $title, $comment. Will be replaced before sending." = "Hinweis: Urlaubsdaten können über die Platzhalter: $begin, $end, $duration, $title, $comment eingefügt werden. Diese werden vor dem Versenden ersetzt.";
+
+"Free days" = "Freie Tage";
+"Calculation" = "Berechnung";
+"Public holiday calendar" = "Feiertagskalender";
+"Select public holiday calendar" = "Feiertagskalender auswählen";
+"Select free days" = "Freie Tage wählen";
+"Select the weekdays which shall be excluded when calculating the duration of your leave." = "Wählen Sie die Wochentage aus, die bei der Berechnung der Urlaubsdauer nicht berücksichtig werden sollen";
+"Select calendar" = "Kalender wählen";
+"Select the calendar that contains (only) public holidays. When calculating the duration of your leave, dates found in this calendar will be excluded." = "Wählen Sie den Kalender mit Feiertagen aus. Bei der Berechnung der Urlaubsdauer werden Einträge, die in diesem Kalender gefunden werden, berücksichtigt.";
+"Select the calendar were your leave days shall be added as events. When deleting leave, events found in this calendar and match in title will be deleted." = "Wählen Sie den Kalender aus, in dem die von der App erstellen Urlaubstage gespeichert werden sollen. Werden Einträge in der App gelöscht, werden auch zum Dateum und Titel passende Einträge in diesem Kalender entfernt.";
+
+/* version 1.2 */
+
+"Can't send mail" = "Mail kann nicht gesendet werden";
+"Can't send mails because this device is not configured to send mails." = "Mail kann nicht gesendet werden, da dieses Gerät nicht zum Versenden von Mails konfiguriert ist.";
+"Note: Duration excludes all weekdays selected under settings -> free days as well as any events/days found in the public holiday calender configured under settings -> public holiday calendar (if enabled)." = "Die Berechnung der Dauer berücksichtigt auch den Feiertagskalender sowie die konfigurierten freien Tage unter Einstellungen";
+
+/* version 1.3 */
+
+"Support" = "Support";
+"FAQ/Feedback" = "FAQ/Feedback";
+"Contact" = "Kontakt";
+"Report Bug" = "Fehler melden";
+"Send feedback" = "Feedback schicken";
+
+"Please include as much information as possible when submitting bug reports." = "Beim Melden von Fehlern bitte so viele Informationen wie möglich angeben.";
+
+"Help" = "Hilfe";
+"FAQ" = "FAQ";
+
+"More information is also avaiable on http//annualleave.s710.de." = "Mehr Infos sind auch unter http://annualleave.s710.de verfügbar";
+
+"Date" = "Datum";
+
+
+/* version 2.0 */
+
+"Wipe data" = "Daten löschen";
+"Are you sure you want to erase all data? This operation can not be undone." = "Sind Sie sicher dass alle Daten gelöscht werden sollen? Diese Operation kann nicht rückgängig gemacht werden.";
+"Cancel" = "Abbrechen";
+"Save in calendar" = "In Kalender speichern";
+"Disabled" = "Deaktiviert";
+"Data storage" = "Datenspeicher";
+
+"The public holiday calendar is a user-provided calendar that contains public holiday entries. Public holiday will be taken into account when calculating durations of leave." = "Der Feiertagskalender ist ein, vom Benutzer bereitgestellter Kalender, der Einträge für Feiertage enthält. Feiertage werden bei der Berechnung der Urlaubsdauer berücksichtigt.";
+
+"The store calendar is a user-provided calendar where leave will be saved as events." = "Der Kalender zum speichern des Urlaubs ist ein, vom Benutzer bereitgestellter Kalender, in dem der Urlaub beim Anlegen gespeichert wird.";
+
+"Select one of the calendars available on your device. Please make sure that the selected calendar ONLY contains public holiday entries, and no other events." = "Bitte einen Kalender des Geräts auswählen. Bitte wählen Sie einen Kalender, der ausschließlich Feiertage und keine anderen Einträge enthält.";
+
+"Select one of the calendars available on your device." = "Bitte einen von den auf dem Gerät verfügbaren Kalendern auswählen.";
+
+"None" = "Keine";
+"Categories" = "Kategorien";
+"Category" = "Kategorie";
+"Total leave" = "Urlaubstage gesamt";
+"Calendar name" = "Kalendername";
+"Please select" = "Bitte auswählen";
+"Store leave in calendar" = "Urlaub in Kalender speichern";
+"Delete entry" = "Eintrag löschen";
+
+"Select the calendar were your leave days shall be added as events.\nNote: When deleting leave, events found in this calendar and match in title will be deleted." = "Bitte den Kalender, in dem die Urlaubstage als Ereignisse gespeichert werden solle, auswählen. \nHinweis: Wenn Urlaub gelöscht wird, werden Ereignisse mit dem gleichen Namen die in diesem Kalender gefunden werden gelöscht.";
+
+"Are you sure you want to delete this entry?" = "Sind Sie sicher dass sie diesen Eintrag löschen wollen?";
+
+"Beginning of leave year" = "Anfang des Urlaubsjahres";
+"Leave year" = "Urlaubsjahr";
+
+"Note: Changing the beginning of the leave year does NOT retroactively change existing entries!" = "Hinweis: Wird der Anfang des Urlaubsjahres geändert, hat dies KEINE Auswirkung auf bereits gespeicherte Einträge!";
+
+"Note: If the app is configured to save leave days in the calendar, wiping all data will NOT delete any entries in the configured calendar!" = "Hinweis: Wird der Urlaub auch im Kalender gespeichert, wird beim Löschen aller Urlaubseinträge auf dem Gerät nichts im gewählten Kalender gelöscht!";
+
+"Month overview" = "Monatsübersicht";
+"Overtime" = "Überstunden";
+"Sick leave" = "Krankheitstage";
+"Unit" = "Einheit";
+"Is summarized monthly" = "Wird monatlich aufsummiert";
+"Color" = "Farbe";
+"Category name" = "Kategoriename";
+"Affects calculation" = "Fließt in Berechnung mit ein";
+"All leave of this category contributes to the leave year's calculation" = "Alle Einträge dieser Kategorie fließen in die Berechnung des zugehörigen Jahres mit ein";
+"All leave of this category is seperately summarized month by month" = "Alle Einträge dieser Kategorie werden separat in der Monatsübersicht aufsummiert";
+"Default" = "Standard";
+"Green" = "Grün";
+"Red" = "Rot";
+"Blue" = "Blau";
+"Yellow" = "Gelb";
+"Black" = "Schwarz";
+"Grey" = "Grau";
+"Light green" = "Hellgrün";
+"Light blue" = "Hellblau";
+"Light red" = "Hellrot";
+
+"No entries" = "Keine Einträge";
+"Delete" = "Löschen";
+"Delete category"= "Kategorie löschen";
+"Are you sure you want to delete this category?" = "Sind Sie sicher dass Sie diese Kategorie löschen wollen?";
+"Are you sure you want to delete this category? Note: All leave with this category will be DELETED as well!" = "Sind Sie sicher dass Sie diese Kategorie löschen wollen? Hinweis: Alle Einträge mit dieser Kategorie werden ebenfalls GELÖSCHT!";
+
+"Public holiday" = "Feiertag";
+"Create public holiday calendar" = "Feiertagskalender anlegen";
+
+"Calendar not found" = "Kalender nicht gefunden";
+"Selected public holiday calendar not found. Public holiday calendar has been disabled." = "Ausgewählter Feiertagskalender wurde nicht gefunden. Feiertagskalender jetzt deaktiviert.";
+"Selected calendar for leave storage not found. Storing leave in calendar has been disabled." = "Ausgewählter Kalender zum Speichern von Urlaub wurde nicht gefunden. Das Speichern von Urlaub im Kalender wurde deaktiviert.";
+
+"Not editable" = "Nicht editierbar";
+
+/* version 2.1 */
+
+"Warning" = "Warnung";
+"The unit of the category was changed. If you want to save, all leave of this category will be deleted, because hour and day unit can not be converted. Continue?" = "Die Einheit der Kategorie wurde geändert. Wenn Sie speichern, werden alle Einträge dieser Kategorie gelöscht, da Stunden/Tage nicht umgewandelt werden können. Trotzdem speichern?";
+
+"Note: Entries of categories which are configured to be summarized monthly will be shown here." = "Hinweis: Einträge von Kategorien, die zum monatlichen Aufsummieren konfiguriert sind, werden hier angezeigt.";
+
+"The calculated duration of this entry is 0, do you still want to save?" = "Die berechnete Dauer beträgt 0, wollen Sie dennoch speichern?";
+
+"All days of your leave are determined to be public holiday. Please make sure the calender you selected under settings -> public holiday calender only contains public holiday and no other entries." = "Alle Tage des Urlaubs wurden als Feiertage erkannt. Bitte stellen Sie sicher, dass der in den Einstellungen gewählte Kalender ausschließlich Feiertage und keine anderen Termine enthält.";
+
+"More information" = "Mehr informationen";
+
+
+/* version 2.2 */
+
+"Configure annual leave" = "Jahresurlaub einrichten";
+"Timetables" = "Stundenpläne";
+"Timetable" = "Stundenplan";
+"Import data" = "Daten importieren";
+"Export data" = "Daten exportieren";
+"Configure timetables" = "Stundenpläne konfigurieren";
+"Default timetable" = "Standard Stundenplan";
+"Hours per day" = "Stunden pro Tag";
+"Select year to configure" = "Jahr zum einrichten wählen";
+"Year" = "Jahr";
+"No additional days configured yet. Tap the + button to add days for a specific category." = "Noch keine zusätzlichen Tage konfiguriert. Tippen Sie den + Button an um Tage für eine bestimmte Kategorie hinzuzufügen";
+"No additional hours configured yet. Tap the + button to add hours for a specific category." = "Noch keine zusätzlichen Stunden konfiguriert. Tippen Sie den + Button an um Stunden für eine bestimmte Kategorie hinzuzufügen";
+"Days per year" = "Tage pro Jahr";
+"Hours per year" = "Stunden pro Jahr";
+"Data source" = "Datenquelle";
+"Target" = "Ziel";
+"Start import" = "Importieren starten";
+"Start export" = "Exportieren starten";
+"Export" = "Exportieren";
+"Import" = "Importieren";
+"Please select a calendar first!" = "Bitte erst einen Kalender wählen!";
+"Note: Range for importing will be -3/+7 years (from now)" = "Hinweis: Bereich der importieren Einträge ist -3/+7 Jahre (von jetzt)";
+"Note: Leave can be imported from a calendar on the device. All entries found in this calendar will be added as leave." = "Hinweis: Urlaub kann von einem Kalender des Geräts importiert werden. Alle Einträge die im gewählten Kalender gefunden werden, werden als Urlaub importiert.";
+"Note: Leave can be exported to a calendar on the device. All entries of leave will be added as events in this calendar." = "Hinweis: Urlaub kann in einen Kalender des Geräts exportiert werden. Alle Urlaubseinträge werden als Termine im gewählten Kalender hinzugefügt.";
+"Available" = "Verfügbar";
+"Category with the same name already exists. Choose different name." = "Kategorie mit dem gleichen Namen existiert bereits. Bitte anderen namen wählen";
+"Uknown date" = "Unbekanntes Datum";
+"Later" = "Später";
+"Yes" = "Ja";
+"No" = "Nein";
+"Note" = "Hinweis";
+"Continue?" = "Fortfahren?";
+"Calendar event" = "Kalenderereignis";
+
+"Annual leave was is not set up yet. Do you want to configure your annual leave now? (Can be done at any time under settings -> configure annual leave)" = "Jahresurlaub wurde noch nicht eingerichtet. Wollen Sie Ihren Jahresurlaub jetzt konfigurieren? (kann jederzeit unter \"Einstellungen -> Jahresurlaub einrichten\" nachgeholt werden)";
+
+
+"Stored leave will be listed here." = "Gespeicherter Urlaub wird hier aufgelistet.";
+"No leave stored yet" = "Noch kein Urlaub gespeichert";
+
+"Warning: Changing the unit will:" = "Warnung: Das Ändern der Einheit wird:";
+"- Delete all leave pools with different unit added under 'settings/configure annual leave'" = "- Alle zusätzlichen Tage/Stunden mit anderer Einheit unter 'Einstellungen/Jahresurlaub einrichten' löschen";
+"- Possibly change custom categories (disable affects calculation)" = "- Möglicherweise eigene Kategorien ändern (Beeinflussen der Berechnung deaktivieren)";
+
+"When adding leave, days will be substracted from available pools first, until pool remain reaches zero. After that, days are substracted from annual leave days" = "Beim Eintragen von Urlaub werden die Tage zuerst von den zusätzlich konfigurierten Kategorien abgezogen, bis die verbleibenden Tage 0 sind. Danach wird die Urlaubsdauer von den Tagen des Jahresurlaubs abgezogen";
+"When adding leave, hours will be substracted from available pools first, until pool remain reaches zero. After that, hours are substracted from annual leave hours" = "Beim Eintragen von Urlaub werden die Stunden zuerst von den zusätzlich konfigurierten Kategorien abgezogen, bis die verbleibenden Stunden der Kategorie 0 sind. Danach wird die Urlaubsdauer von den Stunden des Jahresurlaubs abgezogen";
+
+"(expired)" = "(verfallen)";
+
+"Change unit" = "Einheit ändern";
+
+
+
+/* version 2.2b */
+
+"Are you sure?" = "Sind Sie sicher?";
+"Are you sure you want to export all entries of the app to the selected calendar?" = "Sind Sie sicher dass Sie alle Einträge der App in den gewählten Kalender exportieren wollen?";
+"Are you sure you want to import all events from the selected calendar?" = "Sind Sie sicher dass sie alle Einträge des gewählten Kalenders importieren wollen?";
+
+"Additional information will be attached to the calendar event notes. Do not remove this if you plan to import from this calendar again, else results may be inaccurate." = "Zusätzliche Informationen werden an die Notizen der erzeugten Kalenderereignisse angehängt. Löschen Sie diese nicht, falls Sie die Einträge wieder importieren wollen, ansonsten könnte das Ergebnis Fehler enthalten";
+
+"Successfully imported" = "Erfolgreich";
+"calendar events" = "Kalendereinträge importiert";
+
+"Successfully exported" = "Erfolgreich";
+"entries of leave" = "Urlaubseinträge exportiert";
+
+"Unknown date" = "Unbekanntes Datum";
+"Unknown" = "Unbekannt";
+"New timetable" = "Neuer Stundenplan";
+
+/* version 2.4 */
+
+"Selection" = "Auswahl";
+"All" = "Alle";
+"Holidays" = "Feiertage";
+"Manually adjusted duration will not be automatically recalculated anymore. If you want to switch back to automatic calculation, switch this option on again below." = "Die manuell angepasste Dauer wird ab sofort nicht mehr automatisch berechnet. Um die automatische Berechnung wieder zu aktivieren, aktivieren Sie den Schalter \"Dauer berechnen\".";
+"Calculate duration" = "Dauer berechnen";
+
+"week" = "Woche";
+"Week" = "Woche";
+
+"Calculate planned leave" = "Geplanten Urlaub berechnen";
+"Selected timetables (rotating)" = "Ausgewählte Stundenpläne (rotierend)";
+
+/* version 2.8 / 1.0 ipad */
+
+"User management" = "Benutzerverwaltung";
+"New user" = "Neuer Benutzer";
+"User" = "Benutzer";
+"Enter name" = "Name eingeben";
+"Enter user" = "Benutzer eingeben";
+"Password" = "Passwort";
+"Enter password" = "Passwort eingeben";
+"Users" = "Benutzer";
+"Stay logged in" = "Angemeldet bleiben";
+"User list" = "Benutzerliste";
+"Edit user" = "Benutzer editieren";
+"Login" = "Anmelden";
+"Available users" = "Verfügbare Benutzer";
+
+"Password is incorrect" = "Falsches Passwort";
+"Unknown user" = "Unbekannter Benutzer";
+"No user selected" = "Kein Benutzer angegeben";
+"Logout" = "Abmelden";
+"Create" = "Erstellen";
+"Create User" = "Neuer Benutzer";
+"iCloud not available" = "iCloud nicht verfügbar";
+
+"Can edit users" = "Kann benutzer editieren";
+"Visible users" = "Sichtbare Benutzer";
+"Select the users which this user will be able to see" = "Wähle die Benutzer aus, die dieser Benutzer sehen kann";
+"Only admin users can add/delete other users.\nNote: Currently active user can not be deleted." = "Nur Admin-Benutzer können andere Benutzer erstellen oder löschen.\nHinweis: Der aktive Benutzer kann nicht gelöscht werden";
+
+"Can't create user with empty name" = "Der Benutzername kann nicht leer sein";
+"Can't create user, a user with the same name already exists!" = "Benutzer mit gleichem Namen existiert bereits!";
+
+"Failed to connect to iCloud" = "Verbindung zu iCloud konnte nicht hergestellt werden";
+
+"No users have been created yet" = "Es wurden noch keine Benutzer angelegt";
+"Select user" = "User auswählen";
+
+"iCloud synchronization" = "iCloud Synchronisierung";
+
+"Send mail" = "Mail senden";
+"Send mail" = "Mail senden";
+
+"Note: Duration excludes all weekdays selected under 'settings - free days' as well as public holidays (if enabled)." = "Hinweis: Die Dauer berücksichtigt die freien Tage (Einstellungen - freie Tage) sowie Feiertage, sofern aktiviert (Einstellungen - Feiertagskalender).";
+"Location" = "Ort";
+
+"Choose export type" = "Methode wählen";
+"Configurable overview of your leave saved as PDF file" = "Konfigurierbare Übersicht des Urlaubs gespeichert als PDF Datei";
+"CSV spreadsheet with all your leave entries (e. g. to import in Microsoft Excel)" = "CSV Datei mit dem allen Urlaubstagen (z. B. zum Import in Microsoft Excel)";
+"Exports your leave as either PDF or CSV file, and then sends the file as mail attachment." = "Exportiert Urlaub als entweder PDF oder CSV Datei, und versendet diese dann per EMail";
+"Create PDF" = "PDF erstellen";
+"Create CSV" = "CSV erstellen";
+"Select export options" = "Optionen wählen";
+"Select file contents" = "Inhalt wählen";
+"Filename" = "Dateiname";
+"Document title" = "Dokumenttitel";
+"Leave Year" = "Urlaubsjahr";
+"Excluded categories" = "Ausgenommene Kategorien";
+"Users" = "Benutzer";
+"Include planned leave" = "Geplanten Urlaub exportieren";
+"Include unkown date leave" = "Urlaub mit unbekanntem Datum exportieren";
+"Add summary" = "Zusammenfassung";
+"Add leave list" = "Urlaubsliste";
+"Add title" = "Urlaubstitel";
+"Add date" = "Datum";
+"Add duration" = "Dauer";
+"Add category name" = "Kategorie";
+"Add username" = "Benutzername";
+"leavesummary.csv" = "urlaubsuebersicht.csv";
+"leavesummary.pdf" = "urlaubsuebersicht.pdf";
+"Leave summary" = "Urlaubsübersicht";
+"Enter city/location" = "Ort eingeben";
+"Enter title" = "Titel eingeben";
+"Enter username" = "Benutzernamen eingeben";
+"Enter category name" = "Kategoriename eingeben";
+"Selected color" = "Ausgewählte Farbe";
+"When editing leave, your can set a category, which will affect how the leave is calculated and/or displayed" = "Beim Eintragen von Urlaub kann eine Kategorie ausgewählt werden, die beeinflusst, wie der Urlaub berechnet und/oder angezeigt wird";
+"Enter receiver address" = "Empfänger eingeben";
+"Enter cc address" = "CC Empfänger eingeben";
+"Enter bcc address" = "BCC Empfänger eingeben";
+"Enter subject" = "Betreff eingeben";
+
+"Loading iCloud storage, please wait ..." = "Verbinden zu iCloud, bitte warten ...";
+"User does not exist" = "Benutzer existiert nicht";
+"Password incorrect" = "Falsches Passwort";
+"Failed to load data from storage. Erase all data and restart application?" = "Fehler beim Laden der Daten. Alle Daten löschen und App neu starten?";
+"Delete data" = "Daten löschen";
+"Error: Failed to load iCloud storage" = "Fehler beim Laden von iCloud";
+"Confirmation" = "Bestätigung";
+"This will erase all data on the device and in the iCloud storage. This can not be undone. Continue?" = "Hiermit werden alle Daten vom Gerät und iCloud gelöscht. Dies kann nicht rückgängig gemacht werden. Fortfahren?";
+"All data was erased. Please restart the app." = "Alle Daten wurden gelöscht. Bitte die App (vollständig) neu starten";
+
+" None" = "Keiner";
+"Enter name" = "Name eingeben";
+"Enter amount of hours" = "Anzahl Stunden eingeben";
+"Enter amount" = "Anzahl eingeben";
+
+"Worldmap" = "Weltkarte";
+"Menu" = "Menü";
+
+"iCloud synchronization is still experimental. The local data from the first enabled device will be copied to iCloud." = "iCloud Synchronisierung wird nur experimentell unterstürzt. Die lokalen Daten des ersten aktivierten Geräts werden nach iCloud kopiert.";
+"User details" = "Benutzerdetails";
+"Rights" = "Rechte";
+
+"The active user was deleted from iCloud." = "Der aktive Benutzer wurde von iCloud gelöscht.";
+
+"Leave list" = "Urlaubsliste";
+
+"iCloud support note" = "iCloud Support Hinweis";
+
+"Currently, the iCloud synchronization service provided by Apple is known to be potentially unreliable or not 100% stable. Thus, this feature is provided without guarantee and should be used at your own risk.<br/><br/><b>Please note:</b>" = "Es ist bekannt, dass der aktuell von Apple angebotene iCloud Synchronisierungsdienst in der jetzigen Version nicht immer zu 100% verlässlich und stabil ist. Daher wird dieses Feature ohne Garantie angeboten, und sollte nur auf eigene Gefahr genutzt werden.<br/><br/><b>Bitte beachten:</b>";
+"iCloud sync should either be completely enabled or disabled on all devices. It should not be turned on/off intermittently without reason" = "Die iCloud Synchronisierung sollte entweder komplett auf allen Geräten ein- oder ausgeschaltet werden. Die iCloud Synchronisierung sollte nicht auf einem oder mehreren Geräten zeitweise oder ohne Grund deaktiviert werden.";
+"When iCloud sync is disabled by the user, the app works with the local data storage, which is completely separated from the iCloud data storage. All changes made will not be synchronized to iCloud" = "Wenn die iCloud Synchronisierung deaktiviert wird, startet die App mit dem lokalen Datenspeicher auf dem Gerät, welcher komplett vom iCloud Datenspeicher getrennt ist. Alle Änderungen die gemacht werden, werden nicht mit iCloud synchronisiert.";
+"Please note that future updates provided by Apple on both server and device side may break iCloud support." = "Die von der App genutzte iCloud Synchronisierung könnte durch zukünftige Updates von Apple (server- oder geräteseitig) gestört werden.";
+"If you stop using iCloud you will switch to using local data on this device only. Your local data is completely separate from iCloud. Any changes you make will not be be synchronized with iCloud." = "Wenn iCloud deaktiviert wird, wird der lokale Speicher des Geräts aktiviert. Dieser ist komplett von iCloud getrennt. Alle Änderungen die gemacht werden, können nicht in iCloud übernommen werden";
+"Continue" = "Weiter";
+"Synchronization may be slow, depending on the time of day." = "Synchronisierung kann unter Umständen langsam sein, abhängig von der Tageszeit.";
+"To avoid problems, please do not enable iCloud simultaneously on multiple devices, because iCloud data is initialized with the data from the first enabled device." = "Um Problemen vorzubeugen, sollte die iCloud Synchronisierung nicht gleichzeitig auf mehreren Geräten aktiviert werden, da der iCloud Datenspeicher mit den Daten des zuerst aktivierten Gerätes initialisiert wird.";
+
+"This will reset the iCloud storage container and delete all data from iCloud. Please repeat on all used devices." = "Hiermit wird der iCloud Container geleert und alle Daten in iCloud gelöscht. Bitte wiederholen Sie dies auf allen genutzten Geräten.";
+
+"Manual/Feedback" = "Handbuch/Feedback";
+"Manual" = "Handbuch";
+
+"More information is also avaiable on http//www.annualleave.de." = "Mehr Informationen sind auch unter http://www.annualleave.de verfügbar";
+"Cannot remove admin rights from last admin user. Reverted rights back to admin rights" = "Adminrechte können nicht vom letzten Admin-User entfernt werden. Adminrechte wurden zurückgesetzt.";
+
+"Detailed days info" = "Detaillierte Info der Urlaubstage";
+"Days will be substracted from available pools first" = "Tage werden zuerst von Kategorien abgezogen";
+"No additional days configured" = "Keine zusätzlichen Tage konfiguriert";
+"Public holiday " = "Feiertage";
+
+
+"Create calendar for public holiday" = "Kalender für Feiertage anlegen";
+"Public holiday can be obtained from a calendar on the device (if available). Public holiday will be taken into account when calculating durations of leave." = "Feiertage können aus einem Kalender auf dem Gerät bezogen werden (falls verfügbar). Feiertage werden bei der Berechnung des Urlaubs berücksichtigt";
+
+"Public holiday from calendar" = "Feiertage aus Kalender";
+
+
+/* version 2.9 / version 1.1 */
+
+"Leave summary attached as PDF file" = "Urlaubsübersicht als PDF Datei";
+"Leave summary attached as CSV file" = "Urlaubsübersicht als CSV Datei";
+"Calendar export" = "Kalenderexport";
+"Calendar import" = "Kalenderimport";
+
+"Exports leave entries to a calendar on the device" = "Exportiert Urlaub in einen Kalender auf dem Gerät";
+"Imports calendar appointments from a calendar on the device" = "Importiert Kalenderereignisse aus einem Kalender auf dem Gerät";
+"Imports a CSV file with a specific format from dropbox into the app" = "Importiert eine CSV Datei von Dropbox in die App";
+"Both import and export to dropbox needs an active dropbox account. Enable your dropbox account in the app settings." = "Der Zugriff auf Dropbox erfordert ein mit der App verknüpftes Dropbox Konto. Dies kann in den Einstellungen eingerichtet werden.";
+
+"Available files" = "Verfügbare Dateien";
+"Select CSV file to import" = "CSV Datei zum importieren wählen";
+
+"No files in dropbox folder (subfolder Apps/Annual Leave)." = "Keine Dateien im Dropbox Ordner (Unterverzeichnis Apps/Annual Leave)";
+"Do you want to import the following file:" = "Soll die folgende Datei importiert werden:";
+"more" = "weitere";
+"Enabled" = "Aktiviert";
+
+"Disable dropbox" = "Dropbox deaktivieren";
+"Do you want to disable dropbox?" = "Soll Dropbox deaktiviert werden?";
+"Folder contents" = "Ordnerinhalt";
+
+"Dropbox Account" = "Dropbox Konto";
+"Dropbox enabled" = "Dropbox aktiviert";
+"Dropbox is linked to this app/user:" = "Dropbox ist verknüpft mit dieser App und dem Benutzer:";
+"Enable dropbox" = "Dropbox aktivieren";
+"Link this app with the current user to your dropbox account" = "Verknüpft die App mit dem aktuellen Benutzer mit ihrem Dropbox Konto";
+"Folder empty or not loaded" = "Ordner leer oder nicht geladen";
+"Dropbox account" = "Dropbox Konto";
+"Note: The dropbox account will be linked to this app, and the currently active user. When you log in with a different user, the dropbox account will be un-linked." = "Hinweis: Der Dropbox Account wird mit dieser App und dem aktuellen Benutzer verknüpft. Wenn der Benutzer gewechselt wird, wird Dropbox deaktiviert";
+"This app stores data in the 'Annual Leave' subfolder of your dropbox folder." = "Diese App speichert Daten im 'Annual Leave' Unterordner des Dropbox Kontos";
+"No files in dropbox folder." = "Keine Dateien im Dropbox Ordner";
+"Failed to upload file to dropbox" = "Datei konnte nicht zu Dropbox übertragen werden";
+
+"Pool" = "Zusätzlicher Urlaub";
+
+"Can't save file" = "Datei konnte nicht gespeichert werden";
+
+"Include categories" = "Kategorien exportieren";
+"Include timetables" = "Stundenpläne exportieren";
+
+"Note: Only those users which are accessible for the active user can be exported (can be changed in user management)" = "Hinweis: Nur Benutzer für die der aktuelle Benutzer Zugriffsrechte hat, können exportiert werden (kann in der Nutzerverwaltung geändert werden)";
+
+"Start export?" = "Export starten?";
+"Create backup" = "Backup anlegen";
+"CSV File/Spreadsheet (email, dropbox)" = "CSV Datei/Tabelle (Email, Dropbox)";
+"PDF File (email, dropbox)" = "PDF Datei (Email, Dropbox)";
+
+"Create backup (dropbox)" = "Backup anlegen (Dropbox)";
+"Creates a backup file of all data and saves to dropbox" = "Erzeugt eine Backup Datei von allen Daten und speichert diese auf Dropbox";
+"Imports a previously created backup file from dropbox" = "Importiert eine zuvor erstellte Backup Datei von Dropbox";
+
+"Update user:" = "Benutzer aktualisieren:";
+"Replace user:" = "Benutzer ersetzen:";
+"Update existing" = "Bestehenden Eintrag aktualisieren";
+"Replace existing" = "Bestehenden Eintrag ersetzen";
+
+"Update existing: " = "Aktualisieren: ";
+"Replace existing: " = "Ersetzen: ";
+
+"Skip" = "Überspringen";
+"Replace" = "Ersetzen";
+"Update" = "Aktualisieren";
+"Create" = "Anlegen";
+"Create new" = "Neu anlegen";
+"Don't import" = "Nicht importieren";
+"Import backup" = "Backup importieren";
+"Import backup (dropbox)" = "Backup importieren (Dropbox)";
+"Select backup file to import" = "Zu importierende Backup Datei auswählen";
+"Calendar color" = "Kalenderfarbe";
+"leave entries" = "Urlaubseinträge";
+"timetables" = "Stundenpläne";
+"categories" = "Kategorien";
+"Successfully imported backup." = "Backup erfolgreich importiert.";
+"Successfully created backup" = "Backup erfolgreich erstellt";
+"Send by mail" = "Per Email versenden";
+"Save to dropbox" = "Auf Dropbox speichern";
+"Period" = "Zeitraum";
+"Press 'save' to save all changes and complete the import. Go back to discard any changes without saving." = "'Sichern' drücken um alle Änderungen zu speichern und den Import abzuschließen. Zurück gehen um alle Änderungen ohne Speichern zu verwerfen.";
+
+"All data and users are stored on the device only (there is no online storage). There is no password recovery, please write down your password." = "Alle Daten und Benutzer werden nur auf dem Gerät gespeichert (nicht im Internet). Es gibt  keine Passwortwiederherstellung, bitte notieren sie sich ihr Passwort.";
+
+"Failed to export data" = "Daten konnten nicht exportiert werden";
+"At least one user must be selected" = "Mindestens ein Benutzer muss ausgewählt werden";
+
+"Automatic" = "Automatisch";
+"Done" = "Fertig";
+"Can't save user with empty name" = "Der Benutzername kann nicht leer sein";
+

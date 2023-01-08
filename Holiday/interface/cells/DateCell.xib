@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DateCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4G-Md-nzO">
+                        <rect key="frame" x="16" y="11" width="41.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="kaP-OR-1OR">
+                        <rect key="frame" x="182" y="-59" width="129" height="162"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="162" id="2sz-1B-LV9"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="162" id="8Uh-Y8-Na2"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="129" id="Ac0-vw-DNN"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="129" id="epx-4G-Xwx"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="129" id="udO-ZJ-a7t"/>
+                            <constraint firstAttribute="width" constant="129" id="uhT-Zl-xdz"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="129" id="yyx-sg-ZBh"/>
+                        </constraints>
+                        <connections>
+                            <action selector="onValueChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="FGC-MZ-mkD"/>
+                        </connections>
+                    </datePicker>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRi-I2-CxW">
+                        <rect key="frame" x="141" y="4.5" width="35" height="35"/>
+                        <color key="backgroundColor" name="buttonPickerColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="702-Kz-0t3"/>
+                            <constraint firstAttribute="height" constant="35" id="vrV-8c-1Qp"/>
+                        </constraints>
+                        <state key="normal" title="1"/>
+                        <connections>
+                            <action selector="onButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Bkq-pw-tVb"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kaP-OR-1OR" firstAttribute="leading" secondItem="T4G-Md-nzO" secondAttribute="trailing" constant="124.5" id="2hd-PP-l7R"/>
+                    <constraint firstItem="RRi-I2-CxW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6V6-TF-akE"/>
+                    <constraint firstItem="T4G-Md-nzO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="CcG-00-rOp"/>
+                    <constraint firstAttribute="trailing" secondItem="kaP-OR-1OR" secondAttribute="trailing" constant="9" id="TjQ-6W-TkE"/>
+                    <constraint firstItem="T4G-Md-nzO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="WMH-up-OlU"/>
+                    <constraint firstItem="kaP-OR-1OR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fFe-B4-fV3"/>
+                    <constraint firstAttribute="bottom" secondItem="T4G-Md-nzO" secondAttribute="bottom" constant="12" id="fTc-26-aeP"/>
+                    <constraint firstItem="kaP-OR-1OR" firstAttribute="leading" secondItem="RRi-I2-CxW" secondAttribute="trailing" constant="6" id="itF-DK-MiZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="button" destination="RRi-I2-CxW" id="Kat-wr-ci7"/>
+                <outlet property="label" destination="T4G-Md-nzO" id="Lmp-LT-ZpF"/>
+                <outlet property="picker" destination="kaP-OR-1OR" id="qTJ-ah-kh6"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="130.58035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="buttonPickerColor">
+            <color red="0.93725490196078431" green="0.93725490196078431" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
